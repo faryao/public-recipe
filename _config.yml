@@ -1,0 +1,18 @@
+title: "食谱"
+description: 公开的食谱集，一道菜一个故事。
+author: Yuan Yao
+timezone: Asia/Shanghai
+permalink: /recipes/:slug/
+
+github_username: faryao
+repository_name: public-recipe
+baseurl: /public-recipe
+
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:slug/
+
+exclude:
+  - README.md
+  - LICENSE

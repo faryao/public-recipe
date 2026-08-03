@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="recipe">
+  <a class="back-link" href="{{ '/' | relative_url }}">← 返回食谱列表</a>
+  <header>
+    <div class="recipe-title-block">
+      <p class="section-kicker">食谱</p>
+      <h1>{{ page.title }}</h1>
+    </div>
+  </header>
+  <div class="recipe-content">{{ content }}</div>
+  <div class="recipe-actions">
+    <a class="write-button" href="https://github.com/{{ site.github_username }}/{{ site.repository_name }}/edit/main/{{ page.path }}" target="_blank" rel="noreferrer">在 GitHub 上编辑 <span>↗</span></a>
+  </div>
+</article>
