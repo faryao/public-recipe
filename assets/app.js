@@ -54,6 +54,14 @@
     }
   });
 
+  document.querySelectorAll('.delete-link, .delete-button').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const title = link.dataset.deleteTitle || '这道食谱';
+      const confirmed = window.confirm(`确定要删除「${title}」吗？删除会从仓库中移除这份食谱，并需要提交一次 GitHub 变更。`);
+      if (!confirmed) event.preventDefault();
+    });
+  });
+
   const grid = document.getElementById('recipes-grid');
   if (!grid) return;
 

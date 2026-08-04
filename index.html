@@ -13,6 +13,7 @@ layout: default
     <article class="recipe-card" data-recipe-slug="{{ recipe.slug }}" data-recipe-url="{{ recipe.url | relative_url }}" data-edit-url="https://github.com/{{ site.github_username }}/{{ site.repository_name }}/edit/main/{{ recipe.path }}">
       <div class="recipe-card-top">
         <a class="edit-link" href="https://github.com/{{ site.github_username }}/{{ site.repository_name }}/edit/main/{{ recipe.path }}" target="_blank" rel="noreferrer" aria-label="在 GitHub 上编辑{{ recipe.title }}">编辑 ↗</a>
+        <a class="delete-link" href="https://github.com/{{ site.github_username }}/{{ site.repository_name }}/delete/main/{{ recipe.path }}" data-delete-title="{{ recipe.title }}" target="_blank" rel="noreferrer" aria-label="删除{{ recipe.title }}">删除</a>
       </div>
       <h3 class="recipe-card-title">
         <a href="{{ recipe.url | relative_url }}">{{ recipe.title }}</a>

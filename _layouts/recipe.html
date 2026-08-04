@@ -12,5 +12,6 @@ layout: default
   <div class="recipe-content">{{ content }}</div>
   <div class="recipe-actions">
     <a class="write-button" href="https://github.com/{{ site.github_username }}/{{ site.repository_name }}/edit/main/{{ page.path }}" target="_blank" rel="noreferrer">在 GitHub 上编辑 <span>↗</span></a>
+    <a class="delete-button" href="https://github.com/{{ site.github_username }}/{{ site.repository_name }}/delete/main/{{ page.path }}" data-delete-title="{{ page.title }}" target="_blank" rel="noreferrer">删除这道食谱</a>
   </div>
 </article>
